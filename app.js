@@ -34,7 +34,7 @@ app.get("/customers", (req, res) => {
   res.json(results);
 });
 
-// 3. Create an API to get single customer data by its id
+// 3. API to get single customer data by its id
 app.get("/customers/:id", (req, res) => {
   const customerId = parseInt(req.params.id);
   const customer = customers.find((c) => c.id === customerId);
@@ -46,7 +46,7 @@ app.get("/customers/:id", (req, res) => {
   res.json(customer);
 });
 
-// 4. Create an API to list all unique cities with the number of customers
+// 4. API to list all unique cities with the number of customers
 app.get("/cities", (req, res) => {
   const cityCounts = {};
 
@@ -61,11 +61,11 @@ app.get("/cities", (req, res) => {
   res.json(cityCounts);
 });
 
-// 5. Create an API to add a customer with validations
+// 5. API to add a customer with validations
 app.post("/customers", (req, res) => {
   const newCustomer = req.body;
 
-  // Validate required fields
+  // Validation required fields
   if (
     !newCustomer.id ||
     !newCustomer.first_name ||
@@ -76,7 +76,7 @@ app.post("/customers", (req, res) => {
     return res.status(400).json({ error: "All fields are required" });
   }
 
-  // Validate if city and company already exist
+  // Validation if city and company already exist
   const existingCustomer = customers.find(
     (customer) =>
       customer.city === newCustomer.city &&
