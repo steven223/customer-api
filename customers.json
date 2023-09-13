@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "first_name": "Aman",
+    "last_name": "Gupta",
+    "city": "Ahmedabad",
+    "company": "SublimeDataSystems"
+  },
+  {
+    "id": 2,
+    "first_name": "Rajesh",
+    "last_name": "Kumar",
+    "city": "Mumbai",
+    "company": "TechSolutions India"
+  },
+  {
+    "id": 3,
+    "first_name": "Priya",
+    "last_name": "Sharma",
+    "city": "Delhi",
+    "company": "ABC Corporation India"
+  },
+  {
+    "id": 4,
+    "first_name": "Deepesh",
+    "last_name": "Patel",
+    "city": "Bangalore",
+    "company": "WebDesign Co. India"
+  },
+  {
+    "id": 6,
+    "first_name": "Neha",
+    "last_name": "Verma",
+    "city": "Hyderabad",
+    "company": "Software Innovations India"
+  },
+  {
+    "id": 7,
+    "first_name": "Shiv",
+    "last_name": "Mehta",
+    "city": "Hyderabad",
+    "company": "Iceipts"
+  }
+]
